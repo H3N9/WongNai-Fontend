@@ -78,7 +78,7 @@ const BoxContent = ({ trip }) => {
                 </div>
 
                 <div className="descript grayText">
-                    <p>
+                    <p className="margin-d">
                         {
                             substringText(description, 200)
                                 .split("\n")
@@ -96,7 +96,7 @@ const BoxContent = ({ trip }) => {
                 </div>
 
                 <div className="tag">
-                    <p className="grayText">หมวด: {tags.map(tagsHandle)}</p>
+                    <p className="grayText margin-d">หมวด: {tags.map(tagsHandle)}</p>
                 </div>
 
                 <div className="img-info-container">
