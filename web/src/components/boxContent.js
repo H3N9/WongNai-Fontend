@@ -72,7 +72,7 @@ const BoxContent = ({ trip }) => {
 
             <div className="info-card">
                 <div className="title-box">
-                    <a className="title" href={url}>
+                    <a className="title" href={url} target="_blank">
                         {title}
                     </a>
                 </div>
@@ -88,7 +88,7 @@ const BoxContent = ({ trip }) => {
                         }
                         <span>
                             {" .... "}
-                            <a className="dogeText hoverText" href={url}>
+                            <a className="dogeText hoverText" href={url} target="_blank">
                                 อ่านต่อ
                             </a>
                         </span>
