@@ -24,6 +24,7 @@ const Index = () => {
             searchParams.delete("keyword")
         }
         history.push({ search: searchParams.toString() })
+        window.scrollTo(0, 0)
     } // set search text on params URL
 
     useEffect(() => {
