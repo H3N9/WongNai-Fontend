@@ -30,13 +30,17 @@ const BoxContent = ({ trip }) => {
         return text.substring(0, limit)
     }
 
+    const clickHandle = () => {
+        window.scrollTo(0, 0)
+    } // set scroll position to top.
+
     const tagsHandle = (tag, index, arr) => {
         const beforeLast = arr.length - 2 > -1 ? true : false // before last. index must have 2 items at least
         if (beforeLast && index === arr.length - 2) {
             // set "and" before last item and it won't set when only have one item.
             return (
                 <span key={index}>
-                    <Link
+                    <Link onClick={clickHandle}
                         className="grayText hoverText"
                         to={`/trips?keyword=${tag}`}
                     >
@@ -49,7 +53,7 @@ const BoxContent = ({ trip }) => {
             // normal render
             return (
                 <span key={index}>
-                    <Link
+                    <Link onClick={clickHandle}
                         className="grayText hoverText"
                         to={`/trips?keyword=${tag}`}
                     >
